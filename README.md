@@ -60,3 +60,13 @@ api python /usr/src/app/manage.py runserver 0.0.0.0:9001
 ```
 - docker-compose -f docker-compose.prod.yml logs -f
 ```
+
+### testing
+```
+- docker-compose exec api python manage.py test && flake8
+```
+
+### create module
+```
+- docker-compose exec api python manage.py startapp module_name
+```
