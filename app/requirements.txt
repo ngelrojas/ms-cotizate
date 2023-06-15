@@ -6,4 +6,5 @@ gunicorn
 qrcode
 aiohttp
 boto3
+django-storages
 
