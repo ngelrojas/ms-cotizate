@@ -19,6 +19,5 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           script: |
-            cd /projects/
-            git fetch origin main
-            git reset --hard origin/main
+            pwd
+            ls -l
