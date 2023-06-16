@@ -1,8 +1,10 @@
 name: Deploy to EC2 CITI Machine
+
 on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: self-hosted
