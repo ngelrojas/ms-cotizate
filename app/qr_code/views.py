@@ -49,5 +49,5 @@ class QRCodeGenerator(viewsets.ViewSet):
         }, status=status.HTTP_200_OK)
         # return HttpResponse(image_data, content_type='image/png')
 
-    def get(self, request, pk=None):
+    def post(self, request, pk=None):
         return self.generate_qr_code_and_upload(request)
